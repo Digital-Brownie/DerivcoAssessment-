@@ -6,6 +6,10 @@ public class ProblemA : ISolveProblems<string>
 {
     public string Solve(string input)
     {
-        throw new NotImplementedException();
+        return input
+            .Split(' ')
+            .GroupBy(w => w)
+            .Select(g => (Word: g.Key, Count: g.Count()))
+            .Any(g => g.Count != 1) ? "no" : "yes";
     }
 }

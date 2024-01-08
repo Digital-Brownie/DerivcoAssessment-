@@ -7,5 +7,5 @@ public class ProblemsFixture
 {
     public ISolveProblems<string> ProblemA { get; set; } = new ProblemA();
     public ISolveProblems<string> ProblemB { get; set; } = new ProblemB();
-    public ISolveProblems<string> ProblemC { get; set; } = new ProblemC();
+    public ISolveProblems<int> ProblemC { get; set; } = new ProblemC();
 }
